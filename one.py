@@ -65,21 +65,7 @@ def stage(ctx):
                 "file_glob": "junit.xml",                
                 
             },
-            {
-                "tool": "shell",
-                "script": """
-                    # Check if pip3 is installed
-                    if ! command -v pip3 &> /dev/null ; then
-                        echo "pip3 is not installed. Installing..."
-                        
-                        sudo apt-get install -y python3-pip 
-                    else
-                        echo "pip3 is already installed."
-                    fi
-
-                """,              
-                "user": "catchyash007",
-            }, 
+           
 
              {
                 "tool": "shell",
